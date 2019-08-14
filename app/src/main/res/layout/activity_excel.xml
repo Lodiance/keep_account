@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date_label"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="傳出excel"
+        android:gravity="center"
+        android:textSize="24dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="起始日期 :"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:hint="選擇日期"
+            android:textSize="24dp"
+            android:id="@+id/output_date1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="結束日期 :"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:hint="選擇日期"
+            android:textSize="24dp"
+            android:id="@+id/output_date2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/output_excel"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="輸出excel"
+            android:textSize="24dp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

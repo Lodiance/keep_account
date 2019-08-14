@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date_label"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="記帳內容"
+        android:gravity="center"
+        android:textSize="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/uw_text_date"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="yyyy/mm/dd"
+            android:textSize="24dp" />
+
+        //類別
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="收支 :"
+                android:textSize="24dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/uw_RDG">
+                <RadioButton
+                    android:id="@+id/uw_income"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:hint="收入"
+                    android:textSize="24dp" />
+
+                <RadioButton
+                    android:id="@+id/uw_outcome"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:hint="支出"
+                    android:textSize="24dp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        //金額
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="金額 :"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:hint="輸入金額"
+                android:textSize="24dp"
+                android:id="@+id/uw_money"/>
+
+        </LinearLayout>
+
+        //類別
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="類別 :"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:hint="輸入類別"
+                android:textSize="24dp"
+                android:id="@+id/uw_kind"/>
+
+        </LinearLayout>
+
+        //備註
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="備註 :"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:hint="輸入備註"
+                android:textSize="24dp"
+                android:id="@+id/uw_note"/>
+
+        </LinearLayout>
+
+        //確認
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="確認"
+                android:textSize="24dp"
+                android:id="@+id/uw_confirm"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="刪除"
+                android:textSize="24dp"
+                android:id="@+id/uw_del"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="取消"
+                android:textSize="24dp"
+                android:id="@+id/uw_cancel"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
